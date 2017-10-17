@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+{{ error }}
+
+<div class="container">
+    <form class="form-register" role="form" method="post" action="{{ url_for('submit') }}">
+        <h2 class="form-register-heading">Generate personal VPN certificate</h2>
+        <p class="description">Password must contain eight characters including one captial and one number.</p>
+        <label for="username" class="sr-only"></label>
+        <input type="username" id="inputUsername" class="form-control" value="{{ request.form.username }}" placeholder="Username" required autofocus>
+        <label for="email" class="sr-only"></label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="password1" class="sr-only"></label>
+        <input name=password1 type="password" id="inputPassword" class="form-control" placeholder="Password" required >
+        <label for="password2" class="sr-only"></label>
+        <input name=password2 type="password" id="inputPassword" class="form-control" placeholder="Retype Password" required >
+        <button class="btn btn-lg btn-primary btn-block" type="submit">submit</button>
+    </form>
+
+</div>
+
+</body>
+</html>
+

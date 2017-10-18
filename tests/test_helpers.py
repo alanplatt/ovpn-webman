@@ -1,5 +1,5 @@
 from ovpnWebman.helpers import check_password
-import pytest
+
 
 def test_check_password():
     """
@@ -10,4 +10,3 @@ def test_check_password():
     assert check_password('short') == False
     assert check_password('C0rect') == False
     assert check_password('Correct8') == True
-

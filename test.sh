@@ -28,6 +28,6 @@ python -m pytest tests/
 #nosetests --with-coverage --cover-erase --cover-package=aws_assume_role
 
 echo "Running flake8..."
-flake8 *.py
+flake8 *.py ovpnWebman/*.py tests/*.py
 
 echo "Done!!"

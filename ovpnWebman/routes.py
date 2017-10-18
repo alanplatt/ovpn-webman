@@ -7,8 +7,6 @@ def submit():
   if request.method == 'POST':
     print (dir(request.form))
     print (request.form)
-    foo = run_ls()
-    print (foo.decode('utf-8'))
 
     if request.form['password1'] == request.form['password2']:
       if check_password(request.form['password1']):

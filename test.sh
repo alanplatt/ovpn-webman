@@ -28,6 +28,7 @@ python -m pytest tests/
 #nosetests --with-coverage --cover-erase --cover-package=aws_assume_role
 
 echo "Running flake8..."
-flake8 *.py ovpnWebman/*.py tests/*.py
+flake8 *.py ovpnWebman/*.py --exclude __init__.py --ignore E501
+flake8 *.py tests/*.py --ignore E712,E501
 
 echo "Done!!"
